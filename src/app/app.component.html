@@ -1,0 +1,8 @@
+<hello name="{{ name }}"></hello>
+
+<p>Simple example to understand @Input and @Output</p>
+<!-- Property binding is done to flow data from Parent to child -->
+<!-- Note - $event contains the data that user has in child component -->
+<app-child [num]="parentVal" (str)="displayName($event)"></app-child>
+
+<p>Child to parent flow - {{ framework }}</p>
